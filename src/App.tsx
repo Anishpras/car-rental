@@ -1,12 +1,25 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
-import './App.css';
+import "./App.css";
+import { HomePage } from "./app/containers/HomePage";
+
+const AppContainer = styled.div`
+  ${tw`
+      w-full
+      h-full
+      flex
+      flex-col
+`};
+`;
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello World</h1>
-    </div>
+    <AppContainer>
+      <HomePage />
+      <h1></h1>
+    </AppContainer>
   );
 }
 
